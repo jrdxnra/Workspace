@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Meet Your Coach Pop Up!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .flyer-container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 2px solid #3b82f6; /* Blue border */
+        }
+        .header-gradient {
+            background: linear-gradient(to right, #3b82f6, #60a5fa); /* Blue gradient */
+        }
+        .button-primary {
+            background-color: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+        }
+        .button-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <!-- Header Section -->
+        <div class="header-gradient text-white p-6 md:p-8 text-center rounded-t-xl">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2 leading-tight">
+                Meet Your Coach Pop Up!
+            </h1>
+            <p class="text-lg md:text-xl font-light opacity-90">
+                Find your path to fitness.
+            </p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="p-6 md:p-8 space-y-6">
+            <div class="text-center">
+                <p class="text-gray-700 text-lg mb-4">
+                    Ready to kickstart your fitness journey or just curious about H+P offerings?
+                    This is your chance to meet our friendly local coaches in a relaxed environment!
+                </p>
+            </div>
+
+            <!-- Event Details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800">
+                <div class="bg-blue-50 p-4 rounded-lg flex items-center shadow-sm">
+                    <svg class="icon w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-blue-700">Date:</p>
+                        <p>August 21st, 2025</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg flex items-center shadow-sm">
+                    <svg class="icon w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-blue-700">Time:</p>
+                        <p>Mid-Day (11am - 2pm)</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg flex items-center shadow-sm col-span-1 md:col-span-2">
+                    <svg class="icon w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-blue-700">Location:</p>
+                        <p>MPD237 (Specific room details coming soon!)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What to Expect -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">What to Expect:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Meet our friendly H+P Coaches Stirling, Gillian, Joshua, Dylan, and Jordan!</li>
+                    <li>Learn about our fitness class programming offerings.</li>
+                    <li>Get your questions answered in a no-pressure setting.</li>
+                    <li>Experience a quick, fun workout/activity.</li>
+                    <li>Come by and grab some swag!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
